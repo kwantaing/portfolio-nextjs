@@ -23,7 +23,7 @@ export default function Home({ projectFillerData,skillsData }) {
         </section>
         <section className="pt-6 " id="skills">
           <h1 className="font-bold text-xl">Skills</h1>
-          <Skills  skillsdata={skillsData}/>
+          <Skills  skillsData={skillsData}/>
         </section>
         <section className="pt-6" id="projects">
           <h1 className="font-bold text-xl">Experiences</h1>

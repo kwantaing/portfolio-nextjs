@@ -1,5 +1,4 @@
 import nodeJs from "../images/nodeJS.png";
-import tailwindLogo from "../images/tailwind.png";
 
 import Image from "next/image";
 const smallCard = ({ skill }) => {
@@ -13,6 +12,7 @@ const smallCard = ({ skill }) => {
           layout="fill"
           objectFit="contain"
           className="rounded-lg"
+
         />
       </div>
       {/* Right */}
