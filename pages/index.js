@@ -25,14 +25,10 @@ export default function Home({ projectFillerData,skillsData }) {
           <h1 className="font-bold text-xl">Skills</h1>
           <Skills  skillsData={skillsData}/>
         </section>
-        <section className="pt-6" id="projects">
+        <section className="pt-6" id="experiences">
           <h1 className="font-bold text-xl">Experiences</h1>
           <Experiences />
         </section>
-        {/* <section className="pt-6" id="projects">
-					<h2 className="text-4xl font-semibold pb-5">Projects</h2>
-          <Projects/>
-				</section> */}
       </main>
       <Footer />
     </div>

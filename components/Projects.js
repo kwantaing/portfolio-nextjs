@@ -1,6 +1,7 @@
 import MediumCard from "./MediumCard";
 import mccThumb from "../images/thumbnails/mccThumbnail.png";
-import bistroThumb from "../images/thumbnails/bistrostudioThumbnail.png"
+import bistroThumb from "../images/thumbnails/bistrostudioThumbnail.png";
+import netflixThumb from "../images/thumbnails/netflix_payments.png"
 
 const Projects = ({ data }) => {
   const projects = {
@@ -26,16 +27,53 @@ const Projects = ({ data }) => {
     "Bistro Studios": {
       name: "Bistro Studios",
       description: [
-        "Main marketing site for the web design company, Bistro Studios."
+        "Main marketing site for the web design company, Bistro Studios.",
       ],
       technologies: [
-        "React","GatsbyJS","NodeJS","GraphQL","Contentful","Netlify"
+        "React",
+        "GatsbyJS",
+        "NodeJS",
+        "GraphQL",
+        "Contentful",
+        "Netlify",
       ],
       images: [],
       thumbnail: bistroThumb,
       features: [],
       link: "https://bistro.studio",
-    }
+    },
+
+    "Android Destinations Tracker": {
+      name: "Android Destinations Tracker",
+      description: [
+        "Android application that keeps track of user travel destinations, sorted by dream, planned and explored destinations",
+        "Displays and pins destinations on Google maps by color coded markers",
+      ],
+      images: [],
+      thumbnail: "",
+      features: [],
+      technologies: ["Java", "Google Maps API", "Sqlite", "Android Studio"],
+      link: "#",
+    },
+    "Netflix clone": {
+      name: "Netflix clone",
+      description: [
+        "Netflix clone web application that implements TMDB API and Stripe API via firebase",
+        "Displays featured shows in the standard Netflix home page format",
+        "User management, Subscription registration and payment handling",
+      ],
+      images: [],
+      thumbnail: netflixThumb,
+      technologies: [
+        "React",
+        "NodeJS",
+        "Google Firebase",
+        "TMDB API",
+        "Stripe API",
+        "Firebase Authentication",
+      ],
+      link: "https://netflix-clone-33d69.web.app"
+    },
   };
   return (
     <div id="projects">
@@ -43,14 +81,17 @@ const Projects = ({ data }) => {
         {Object.keys(projects).map((key) => {
           console.log(projects[key]);
           return (
-            <MediumCard img={projects[key].thumbnail} title={projects[key].name} />
+            <MediumCard
+              img={projects[key].thumbnail}
+              title={projects[key].name}
+            />
           );
         })}
 
-        {data.map((project) => {
+        {/* {data.map((project) => {
           console.log(project);
           return <MediumCard img={project.img} title={project.title} />;
-        })}
+        })} */}
       </div>
     </div>
   );
