@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import Logo from "../images/siteLogos/qdevLogo.png";
 
 const Header = () => {
   const [show, handleShow] = useState(false);
@@ -21,9 +22,11 @@ const Header = () => {
       } p-7 w-full z-50 grid grid-cols-4 ease-in transition-all duration-150`}
     >
       {/* <header className={`sticky top-0 z-50 ${show && 'bg-white'} shadow-xl p-5 grid grid-cols-4 ease-in transition-all duration-75`}> */}
-      <div className="relative flex items-center h-10 cursor-pointer my-auto ">
+      <div className="relative flex items-center h-16 cursor-pointer my-auto ">
+        {/* <video src={require("../images/siteLogos/qdevDarkLogo.mp4")} autoPlay /> */}
         <Image
-          src="https://links.papareact.com/qd3"
+          // src="https://links.papareact.com/qd3"
+          src={Logo}
           layout="fill"
           objectFit="contain"
           objectPosition="left"
