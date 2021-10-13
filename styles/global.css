@@ -1,0 +1,13 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+}
+@layer utilities {
+        @media(prefers-color-scheme:dark){
+            body{
+                background-color:#1F2937;
+            }
+        }
+}

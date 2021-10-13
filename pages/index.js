@@ -7,7 +7,7 @@ import Experiences from "../components/Experiences";
 import Skills from "../components/Skills";
 import siteLogo from "../images/siteLogos/qLogo.png";
 
-export default function Home({ projectFillerData, skillsData }) {
+export default function Home({ skillsData }) {
   
   return (
     <>
@@ -42,7 +42,7 @@ export default function Home({ projectFillerData, skillsData }) {
           <a id="projects" ></a>
           <section className="pt-6">
             <h1 className="font-bold text-xl">Projects</h1>
-            <Projects data={projectFillerData} />
+            <Projects />
           </section>
           <a id="skills" ></a>
           <section className="pt-6 " id="">
@@ -62,19 +62,11 @@ export default function Home({ projectFillerData, skillsData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("https://links.papareact.com/pyp").then(
-    (res) => res.json()
-  );
-  const projectFillerData = await fetch("https://links.papareact.com/zp1").then(
-    (res) => res.json()
-  );
   const skillsData = await fetch(
     "https://portfolio-data-qdev.s3.us-east-2.amazonaws.com/skills.json"
   ).then((res) => res.json());
   return {
     props: {
-      exploreData,
-      projectFillerData,
       skillsData,
     },
   };

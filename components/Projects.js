@@ -3,7 +3,7 @@ import mccThumb from "../images/thumbnails/mccThumbnail.png";
 import bistroThumb from "../images/thumbnails/bistrostudioThumbnail.png";
 import netflixThumb from "../images/thumbnails/netflix_payments.png";
 
-const Projects = ({ data }) => {
+const Projects = () => {
   const projects = {
     "Mission City Church": {
       name: "Mission City Church",
