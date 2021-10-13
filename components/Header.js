@@ -45,14 +45,14 @@ const Header = () => {
       </div>
       <span />
       <div className="hidden sm:inline-flex text-md font-semibold transform transition duration-500 ease-in-out col-span-2  flex space-x-3 justify-end items-center">
-        <a className="cursor-pointer" onClick={() => scrollToEle("skills")}>
-          Tech
-        </a>
         <a className="cursor-pointer" onClick={() => scrollToEle("about")}>
           About
         </a>
         <a className="cursor-pointer" onClick={() => scrollToEle("projects")}>
           Projects
+        </a>
+        <a className="cursor-pointer" onClick={() => scrollToEle("skills")}>
+          Tech
         </a>
         <a
           className="cursor-pointer"
