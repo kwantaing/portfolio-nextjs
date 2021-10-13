@@ -1,10 +1,11 @@
 import Image from "next/image";
 import aStudio from "../images/androidStudio.png";
 
-const MediumCard = ({ img, title }) => {
+const MediumCard = ({ img, title, link }) => {
+  const goToProjectLink = (link) => window.open(link, "_blank");
   return (
     <div className="cursor-pointer hover:scale-105 transform transition duration-300 ease-out">
-      <div className="relative h-80 w-80">
+      <div className="relative h-80 w-80" onClick={() => goToProjectLink(link)}>
         <Image
           alt={title}
           src={img ? img : aStudio}

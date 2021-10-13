@@ -48,7 +48,10 @@ const About = () => {
     /> */}
       <div className="absolute top-1/2 w-full text-center">
         <p className="text-sm sm:text-lg font-semibold text-gray-100">
-          Hello, I'm Quentin, a software developer.
+          Hi, I'm Quentin.
+        </p>
+        <p className="text-sm sm:text-lg font-semibold text-gray-100">
+          I'm a Software Engineer.
         </p>
         <button
           onClick={() => gotoResume()}

@@ -3,7 +3,7 @@ import SmallCard from "./SmallCard";
 const Skills = ({ skillsData }) => {
   const { languages, frameworks, databases, tools, methodologies } = skillsData;
   return (
-    <div id="tech">
+    <div>
       <section id="languages">
         <h2 className="pl-3 pt-2 font-semibold">Languages</h2>
         <div className="grid grid-cols-2 content-center justify-around sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">

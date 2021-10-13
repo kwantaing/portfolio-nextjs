@@ -53,7 +53,7 @@ const Projects = ({ data }) => {
       thumbnail: "",
       features: [],
       technologies: ["Java", "Google Maps API", "Sqlite", "Android Studio"],
-      link: "#",
+      link: "https://github.com/kwantaing/Android_Destinations_Tracker",
     },
     "Netflix clone": {
       name: "Netflix clone",
@@ -76,7 +76,7 @@ const Projects = ({ data }) => {
     },
   };
   return (
-    <div id="projects">
+    <div>
       <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 ml-3">
         {Object.keys(projects).map((key) => {
           return (
@@ -84,6 +84,7 @@ const Projects = ({ data }) => {
               key={key}
               img={projects[key].thumbnail}
               title={projects[key].name}
+              link={projects[key].link}
             />
           );
         })}
