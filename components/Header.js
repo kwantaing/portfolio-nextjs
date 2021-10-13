@@ -1,8 +1,26 @@
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const [show, handleShow] = useState(false);
+  const transitionNavBar = () => {
+    if (window.scrollY > 100) {
+      handleShow(true);
+    } else {
+      handleShow(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavBar);
+    return () => window.removeEventListener("scroll", transitionNavBar);
+  }, []);
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-xl p-5 grid grid-cols-4">
+    <header
+      className={`fixed top-0 p-[10px] ${
+        show ? "bg-white text-black shadow-xl" : "text-gray-200"
+      } p-7 w-full z-50 grid grid-cols-4 ease-in transition-all duration-15`}
+    >
+      {/* <header className={`sticky top-0 z-50 ${show && 'bg-white'} shadow-xl p-5 grid grid-cols-4 ease-in transition-all duration-75`}> */}
       <div className="relative flex items-center h-10 cursor-pointer my-auto  ">
         <Image
           src="https://links.papareact.com/qd3"

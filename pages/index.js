@@ -17,15 +17,18 @@ export default function Home({ projectFillerData,skillsData }) {
       <Header />
       <About />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
-        <section className="pt-6" id="projects">
+        <a href="" id="projects" className="top-[-250px]"></a>
+        <section className="pt-6">
           <h1 className="font-bold text-xl">Projects</h1>
           <Projects data={projectFillerData} />
         </section>
-        <section className="pt-6 " id="skills">
+        <a id="skills" className="top-[-250px]"></a>
+        <section className="pt-6 " id="">
           <h1 className="font-bold text-xl">Skills</h1>
           <Skills  skillsData={skillsData}/>
         </section>
-        <section className="pt-6" id="experiences">
+        <a id="experiences" className="top-[-250px]"></a>
+        <section className="pt-6" id="">
           <h1 className="font-bold text-xl">Experiences</h1>
           <Experiences />
         </section>

@@ -1,7 +1,7 @@
 import MediumCard from "./MediumCard";
 import mccThumb from "../images/thumbnails/mccThumbnail.png";
 import bistroThumb from "../images/thumbnails/bistrostudioThumbnail.png";
-import netflixThumb from "../images/thumbnails/netflix_payments.png"
+import netflixThumb from "../images/thumbnails/netflix_payments.png";
 
 const Projects = ({ data }) => {
   const projects = {
@@ -72,7 +72,7 @@ const Projects = ({ data }) => {
         "Stripe API",
         "Firebase Authentication",
       ],
-      link: "https://netflix-clone-33d69.web.app"
+      link: "https://netflix-clone-33d69.web.app",
     },
   };
   return (
@@ -82,6 +82,7 @@ const Projects = ({ data }) => {
           console.log(projects[key]);
           return (
             <MediumCard
+              key={key}
               img={projects[key].thumbnail}
               title={projects[key].name}
             />
