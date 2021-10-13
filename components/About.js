@@ -17,7 +17,7 @@ const About = () => {
       "bg-gradient-to-b",
       "bg-gradient-to-bl",
       "bg-gradient-to-r",
-      "bg-gradient-to-br",
+      "bg-gradient-to-tr",
       "bg-gradient-to-bl",
     ],
     colors: ["blue", "green", "red", "yellow", "pink", "purple"],
@@ -36,10 +36,10 @@ const About = () => {
     }`;
     return `${direction} ${from} ${via} ${to}`;
   };
-  let [grad, setGrad] = useState(randomGradient());
   return (
     <div
-      className={`relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] ${grad}`}
+    id="banner"
+      className={`bg-gradient-to-br from-purple-200 via-purple-400 to-blue-400 relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]`}
     >
       {/* <Image
         src="https://links.papareact.com/0fm"

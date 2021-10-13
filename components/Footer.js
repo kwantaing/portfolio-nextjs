@@ -8,7 +8,7 @@ const Footer = () => {
         rel="noopener noreferrer"
       >
         Powered by{" "}
-        <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
+        <img className="dark:text-white bg-white" src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
       </a>
     </footer>
   );

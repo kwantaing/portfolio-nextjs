@@ -9,7 +9,7 @@ import Skills from "../components/Skills";
 export default function Home({ projectFillerData,skillsData }) {
   return (
     // <div className="flex flex-col items-center justify-center min-h-screen py-2">
-    <div>
+    <div className="dark:bg-gray-700 dark:text-white" >
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

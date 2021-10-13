@@ -5,7 +5,7 @@ const LargeCard = ({ experience }) => {
   let startDateFormatted = new Date(startDate);
   let endDateFormatted = new Date(endDate);
   return (
-    <div className="flex py-7 px-2 border-b cursor-pointer hover:opacity-80 hover:shadow-lg pr-4 transition duration-200 ease-out first:border-t rounded-2xl last:mb-5">
+    <div className="flex py-7 px-2 border-b dark:bg-gray-800 border-none my-3 cursor-pointer hover:opacity-80 hover:shadow-lg pr-4 transition duration-200 ease-out first:border-t rounded-2xl last:mb-5">
       {/* Left */}
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
         <Image
