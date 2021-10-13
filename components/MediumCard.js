@@ -10,7 +10,7 @@ const MediumCard = ({ img, title }) => {
           src={img ? img : aStudio}
           layout="fill"
           objectFit="cover"
-          className="bg-gray-300 rounded-xl"
+          className="bg-gray-500 rounded-xl"
         />
       </div>
       <h3 className="text-2xl mt-3">{title}</h3>

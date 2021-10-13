@@ -18,18 +18,17 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 p-[10px] ${
-        show ? "bg-white text-black shadow-xl dark:bg-gray-700 dark:text-white" : "text-gray-200"
+        show ? "bg-white text-black shadow-2xl dark:bg-gray-800 dark:text-white" : "text-gray-200"
       } p-7 w-full z-50 grid grid-cols-4 ease-in transition-all duration-150`}
     >
       {/* <header className={`sticky top-0 z-50 ${show && 'bg-white'} shadow-xl p-5 grid grid-cols-4 ease-in transition-all duration-75`}> */}
-      <div className="relative flex items-center h-16 cursor-pointer my-auto ">
-        {/* <video src={require("../images/siteLogos/qdevDarkLogo.mp4")} autoPlay /> */}
+      <div className="relative col-span-4 sm:col-auto  items-center h-16 cursor-pointer my-auto ">
         <Image
           // src="https://links.papareact.com/qd3"
           src={Logo}
           layout="fill"
           objectFit="contain"
-          objectPosition="left"
+          className="object-center sm:object-left transform transition-all duration-150"
         />
       </div>
       <span />

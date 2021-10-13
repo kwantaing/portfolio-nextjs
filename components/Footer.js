@@ -1,15 +1,32 @@
+import Logo from "../images/siteLogos/qdevLogo.png";
+import Image from "next/image";
+import github from "../images/github.png";
+import { SocialIcon } from "react-social-icons";
+
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center w-full h-24 border-t">
-      <a
-        className="flex items-center justify-center"
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{" "}
-        <img className="dark:text-white bg-white" src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-      </a>
+    <footer className="flex items-center justify-center w-full h-24 p-2">
+      <div className="grid grid-cols-3 items-center w-full h-full">
+        <div className="flex h-full justify-center align-middle">
+          <SocialIcon
+            className="hover:scale-110 transform transition-all duration-125 shadow-xl"
+            bgColor="gray"
+            url="https://www.github.com/kwantaing"
+          ></SocialIcon>
+        </div>
+        <div className="flex h-full justify-center align-middle">
+          <SocialIcon
+            className="hover:scale-110 transform transition-all duration-125 shadow-xl"
+            url="https://www.linkedin.com/in/kwan-tai-quentin-ng-29349bbb"
+          />
+        </div>
+        <div className="flex h-full justify-center align-middle">
+          <SocialIcon
+            className="hover:scale-110 transform transition-all duration-125 shadow-xl"
+            url="mailto:quentin.ng.dev@gmail.com"
+          />
+        </div>
+      </div>
     </footer>
   );
 };
