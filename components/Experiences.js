@@ -10,8 +10,8 @@ const Experiences = () => {
       title: "Bistro Studios",
       role: "Web Developer and Technical Trainer",
       img: bistroLogo,
-      startDate: "2020-9-1",
-      endDate: "2021-6-20",
+      startDate: "9/1/2020",
+      endDate: "6/20/2021",
       description: [
         "Provide Git, GatsbyJS, React, and Headless CMS integration training to the team.",
         "Enable company growth to provide headless CMS site services to clients.",
@@ -24,8 +24,8 @@ const Experiences = () => {
       title: "CitiBank International",
       role: "Market Research Consultant",
       img: citiImg,
-      startDate: "2015-7-1",
-      endDate: "2015-8-15",
+      startDate: "7/1/2015",
+      endDate: "8/15/2015",
       description: [
         "Handled reporting for sale, marketing, and customer relationship management.",
         "Documented progress with prospects and current client companies in Hong Kong and China.",
@@ -39,8 +39,8 @@ const Experiences = () => {
       role: "Bachelor of Computer Information Systems",
       // school: "California State Polytechnic University, Pomona",
       title: "California State Polytechnic University, Pomona",
-      startDate: "2015-9-23",
-      endDate: "2020-5-15",
+      startDate: "9/23/2015",
+      endDate: "5/15/2021",
       description: [
         "Systems Analysis and Design",
         "Object Oriented Programming in Java",
@@ -52,8 +52,8 @@ const Experiences = () => {
     {
       role: "Full Stack Web Development Program",
       school: "Coding Dojo",
-      startDate: " 2019-5-20",
-      endDate: "2019-8-23",
+      startDate: " 5/20/2019",
+      endDate: "8/23/2019",
       description: [
         "Full Stack courses in MEAN, Python, and C# ASP.Net Core.",
         "Completed over 1,000 hours of hands on coding.",

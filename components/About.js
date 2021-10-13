@@ -47,7 +47,7 @@ const About = () => {
         objectFit="cover"
     /> */}
       <div className="absolute top-1/2 w-full text-center">
-        <p className="text-sm sm:text-lg font-semibold text-gray-200">
+        <p className="text-sm sm:text-lg font-semibold text-gray-100">
           Hello, I'm Quentin, a software developer.
         </p>
         <button

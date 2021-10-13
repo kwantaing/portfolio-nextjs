@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 p-[10px] ${
-        show ? "bg-white text-black shadow-2xl dark:bg-gray-800 dark:text-white" : "text-gray-200"
+        show ? "bg-white text-black shadow-2xl dark:bg-gray-800 dark:text-gray-100" : "text-gray-200"
       } p-7 w-full z-50 grid grid-cols-4 ease-in transition-all duration-150`}
     >
       {/* <header className={`sticky top-0 z-50 ${show && 'bg-white'} shadow-xl p-5 grid grid-cols-4 ease-in transition-all duration-75`}> */}

@@ -34,7 +34,7 @@ export default function Home({ projectFillerData, skillsData }) {
         <title>Quentin Ng</title>
         <link rel="icon" href="../images/siteLogos/qLogo.png" />
       </Head>
-      <div className="dark:bg-gray-800 dark:text-white">
+      <div className="dark:bg-gray-800 dark:text-gray-200">
         <Header />
         <About />
         <main className="max-w-7xl mx-auto px-8 sm:px-16">
