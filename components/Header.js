@@ -29,7 +29,7 @@ const Header = () => {
     <header
       className={`fixed top-0 p-[10px] ${
         show
-          ? "bg-white text-black shadow-2xl dark:bg-gray-800 dark:text-gray-100"
+          ? "border-b-gray-400 bg-white text-gray-700 shadow-2xl dark:bg-gray-800 dark:text-gray-100"
           : "text-gray-200"
       } p-7 w-full z-50 grid grid-cols-4 ease-in transition-all duration-150`}
     >
@@ -45,17 +45,17 @@ const Header = () => {
       </div>
       <span />
       <div className="hidden sm:inline-flex text-md font-semibold transform transition duration-500 ease-in-out col-span-2  flex space-x-3 justify-end items-center">
-        <a className="cursor-pointer" onClick={() => scrollToEle("about")}>
+        <a className="hover-underline-animation cursor-pointer" onClick={() => scrollToEle("about")}>
           About
         </a>
-        <a className="cursor-pointer" onClick={() => scrollToEle("projects")}>
+        <a className="hover-underline-animation  cursor-pointer" onClick={() => scrollToEle("projects")}>
           Projects
         </a>
-        <a className="cursor-pointer" onClick={() => scrollToEle("skills")}>
+        <a className="hover-underline-animation  cursor-pointer" onClick={() => scrollToEle("skills")}>
           Tech
         </a>
         <a
-          className="cursor-pointer"
+          className="hover-underline-animation  cursor-pointer"
           onClick={() => scrollToEle("experiences")}
         >
           Experiences

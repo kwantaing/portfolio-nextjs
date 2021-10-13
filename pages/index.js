@@ -35,7 +35,7 @@ export default function Home({ skillsData }) {
         <title>Quentin Ng</title>
         <link rel="icon" href="../images/siteLogos/qLogo.png" />
       </Head>
-      <div className="dark:bg-gray-800 dark:text-gray-200">
+      <div className="dark:bg-gray-800 bg-white dark:text-gray-200 text-gray-700">
         <Header />
         <About />
         <main className="max-w-7xl mx-auto px-8 sm:px-16">

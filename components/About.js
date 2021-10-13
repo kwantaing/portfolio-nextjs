@@ -47,10 +47,10 @@ const About = () => {
         objectFit="cover"
     /> */}
       <div className="absolute top-1/2 w-full text-center">
-        <p className="text-sm sm:text-lg font-semibold text-gray-100">
+        <p className="text-sm sm:text-lg font-semibold text-gray-200">
           Hi, I'm Quentin.
         </p>
-        <p className="text-sm sm:text-lg font-semibold text-gray-100">
+        <p className="text-sm sm:text-lg font-semibold text-gray-200">
           I'm a Software Engineer.
         </p>
         <button
