@@ -55,7 +55,7 @@ const About = () => {
         </p>
         <button
           onClick={() => gotoResume()}
-          className="text-red-400 bg-gray-200 px-8 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150"
+          className="text-purple-500 bg-gray-200 px-8 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150"
         >
           About me
         </button>

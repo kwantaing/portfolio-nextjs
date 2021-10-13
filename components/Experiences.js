@@ -64,7 +64,7 @@ const Experiences = () => {
     },
   ];
   return (
-    <main className="grid pb-5 pt-5 pl-10 pr-10 space-x-2">
+    <main className="grid pb-5 pt-5 space-x-2">
       <div>
         {work.map((experience) => (
           <LargeCard key={experience.title} experience={experience} />

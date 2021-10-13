@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="grid grid-cols-3 items-center w-full h-full">
         <div className="flex h-full justify-center align-middle">
           <SocialIcon
-            className="hover:scale-110 hover:opacity-95 opacity-80 transform transition-all duration-125"
-            bgColor="lightgray"
+            className="hover:scale-110 hover:opacity-95 opacity-80 btransform transition-all duration-125"
+            bgColor="gray"
             url="https://www.github.com/kwantaing"
           ></SocialIcon>
         </div>

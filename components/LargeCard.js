@@ -6,22 +6,22 @@ const LargeCard = ({ experience }) => {
   let endDateFormatted = new Date(endDate);
   return (
       <div
-        className="flex z-20 py-7 px-2 border-b dark:bg-gray-900 border-none my-3 
+        className="sm:flex z-20 py-7 px-2 border-b dark:bg-gray-900 border-none my-3 
             cursor-pointer dark:opacity-100 dark:hover:opacity-80 opacity-90 hover:opacity-100 dark:hover:bg-gray-900
           hover:bg-gray-50 dark:hover:shadow-lg hover:shadow-2xl pr-4 transition duration-200 
             ease-out first:border-t rounded-2xl last:mb-5"
       >
         {/* Left */}
-        <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0 p-2">
+        <div className="relative ml-5 h-24 w-40 md:h-52 md:w-60 flex-shrink-1 ">
           <Image
-            className="rounded-2xl h-1/2"
+            className="relative h-1/2 object-left sm:object-center "
             src={img}
             layout="fill"
             objectFit="contain"
           />
         </div>
         {/* Right */}
-        <div className=" md:inline-flex flex-col flex-grow pl-5">
+        <div className=" md:inline-flex flex-col flex-grow pl-5 pt-2">
           <p className="text-sm text-gray-500">
             {startDateFormatted.toLocaleString("default", { month: "long" })}{" "}
             {startDateFormatted.getFullYear()} -{" "}
