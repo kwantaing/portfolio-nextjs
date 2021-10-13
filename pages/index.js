@@ -8,6 +8,7 @@ import Skills from "../components/Skills";
 import siteLogo from "../images/siteLogos/qLogo.png";
 
 export default function Home({ projectFillerData, skillsData }) {
+  
   return (
     <>
       <Head>
@@ -38,17 +39,17 @@ export default function Home({ projectFillerData, skillsData }) {
         <Header />
         <About />
         <main className="max-w-7xl mx-auto px-8 sm:px-16">
-          <a href="" id="projects" className="top-[-250px]"></a>
+          <a id="projects" ></a>
           <section className="pt-6">
             <h1 className="font-bold text-xl">Projects</h1>
             <Projects data={projectFillerData} />
           </section>
-          <a id="skills" className="top-[-250px]"></a>
+          <a id="skills" ></a>
           <section className="pt-6 " id="">
             <h1 className="font-bold text-xl">Skills</h1>
             <Skills skillsData={skillsData} />
           </section>
-          <a id="experiences" className="top-[-250px]"></a>
+          <a id="experiences" ></a>
           <section className="pt-6" id="">
             <h1 className="font-bold text-xl">Experiences</h1>
             <Experiences />

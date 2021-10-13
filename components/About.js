@@ -38,7 +38,7 @@ const About = () => {
   };
   return (
     <div
-    id="banner"
+    id="about"
       className={`bg-gradient-to-br from-purple-200 via-purple-400 to-blue-400 relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]`}
     >
       {/* <Image
