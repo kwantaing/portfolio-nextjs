@@ -6,8 +6,9 @@
 }
 @layer utilities {
         @media(prefers-color-scheme:dark){
-            body{
+            html,body{
                 background-color:#1F2937;
             }
+
         }
 }

@@ -37,7 +37,6 @@ const Experiences = () => {
   const education = [
     {
       role: "Bachelor of Computer Information Systems",
-      // school: "California State Polytechnic University, Pomona",
       title: "California State Polytechnic University, Pomona",
       startDate: "9/23/2015",
       endDate: "5/15/2021",
@@ -52,6 +51,7 @@ const Experiences = () => {
     {
       role: "Full Stack Web Development Program",
       school: "Coding Dojo",
+      title:"Coding Dojo",
       startDate: " 5/20/2019",
       endDate: "8/23/2019",
       description: [
@@ -65,16 +65,13 @@ const Experiences = () => {
   ];
   return (
     <main className="grid pb-5 pt-5 pl-10 pr-10 space-x-2">
-      {/* <div className="xl:overflow-scroll xl:scrollbar-hide xl:max-h-[92vh]"> */}
-        <div>
-        {/* <div id="experiences" className="flex flex-col"> */}
+      <div>
         {work.map((experience) => (
-          <LargeCard experience={experience} />
+          <LargeCard key={experience.title} experience={experience} />
         ))}
-        {education.map((experience)=>(
-          <LargeCard experience={experience}/>
+        {education.map((experience) => (
+          <LargeCard key={experience.title} experience={experience} />
         ))}
-        {/* </div> */}
       </div>
     </main>
   );
