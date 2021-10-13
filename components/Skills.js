@@ -1,7 +1,6 @@
 import SmallCard from "./SmallCard";
 
 const Skills = ({ skillsData }) => {
-  console.log(skillsData);
   const { languages, frameworks, databases, tools, methodologies } = skillsData;
   return (
     <div id="tech">

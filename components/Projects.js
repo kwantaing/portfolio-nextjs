@@ -79,7 +79,6 @@ const Projects = ({ data }) => {
     <div id="projects">
       <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 ml-3">
         {Object.keys(projects).map((key) => {
-          console.log(projects[key]);
           return (
             <MediumCard
               key={key}
