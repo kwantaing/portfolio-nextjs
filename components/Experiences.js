@@ -1,5 +1,5 @@
 import LargeCard from "./LargeCard";
-import bistroimg from "../images/thumbnails/bistrostudioThumbnail.png";
+import bistroLogo from "../images/bistroLogo.png";
 import citiImg from "../images/thumbnails/citi.png";
 import cppImg from "../images/thumbnails/cpp.png";
 import codingDojoImg from "../images/thumbnails/coding_dojo.png";
@@ -9,7 +9,7 @@ const Experiences = () => {
     {
       title: "Bistro Studios",
       role: "Web Developer and Technical Trainer",
-      img: bistroimg,
+      img: bistroLogo,
       startDate: "2020-9-1",
       endDate: "2021-6-20",
       description: [
