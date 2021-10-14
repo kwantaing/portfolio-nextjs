@@ -31,7 +31,7 @@ const LargeCard = ({ experience }) => {
               endDateFormatted.getFullYear()
               : ""}
           </p>
-              <div className="border-b border-purple-300 w-2/5 pt-2 mb-1" />
+              <div className="border-b border-purple-400 border-2 w-2/5 pt-2 mb-1" />
           <h4 className="text-md font-medium text-gray-600 dark:text-gray-300">
             {role}
           </h4>
@@ -41,7 +41,7 @@ const LargeCard = ({ experience }) => {
           <h2 className="text-sm font-medium text-gray-800 dark:text-gray-500">
             {location}
           </h2>
-          <div className="hidden lg:inline-flex border-b border-purple-300 w-2/5 pt-2 mb-1" />
+          <div className="hidden lg:inline-flex border-b border-purple-400 border-2 w-2/5 pt-2 mb-1" />
           <div className="hidden lg:block" id="descriptions">
             {description.map((desc) => (
               <p
