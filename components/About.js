@@ -8,7 +8,7 @@ const About = () => {
   let i = 0;
   let j = 0;
   const resumeUrl =
-    "https://portfolio-data-qdev.s3.us-east-2.amazonaws.com/quentin-ng-swe-resume.pdf";
+    "https://quentin-ng.com/quentin-ng-resume.pdf";
   const gotoResume = () => {
     window.open(resumeUrl, "_blank");
   };
@@ -37,17 +37,20 @@ const About = () => {
         <p
           id="text1"
           className="text-sm sm:text-lg font-semibold text-gray-200"
-        ></p>
+        >
+          &nbsp;
+        </p>
         <p
           id="text2"
           className="text-sm sm:text-lg font-semibold text-gray-200"
         >
+          &nbsp;
         </p>
         <button
           onClick={() => gotoResume()}
-          className="text-purple-500 bg-gray-200 px-8 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150"
+          className="text-purple-500 bg-gray-200 px-8 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-2xl active:scale-90 transform transition-all duration-150"
         >
-          About me
+          <span className="animate-pulse">About me</span>
         </button>
       </div>
     </div>
