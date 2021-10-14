@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const About = () => {
   const text1 = "Hi, I'm Quentin.";
   const text2 = "I'm a Software Engineer.";
-  const speed = 75;
+  const speed =50;
   let i = 0;
   let j = 0;
   const resumeUrl =
