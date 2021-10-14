@@ -4,11 +4,10 @@ import React, { useEffect, useState } from "react";
 const About = () => {
   const text1 = "Hi, I'm Quentin.";
   const text2 = "I'm a Software Engineer.";
-  const speed =50;
+  const speed = 65;
   let i = 0;
   let j = 0;
-  const resumeUrl =
-    "https://quentin-ng.com/quentin-ng-resume.pdf";
+  const resumeUrl = "https://quentin-ng.com/quentin-ng-resume.pdf";
   const gotoResume = () => {
     window.open(resumeUrl, "_blank");
   };
@@ -22,6 +21,8 @@ const About = () => {
         document.getElementById("text2").innerHTML += text2.charAt(j);
         j++;
         setTimeout(typeWriter, speed);
+      } else {
+        document.getElementById("about-button").classList.add("animate-pulse");
       }
     }
   };
@@ -50,7 +51,7 @@ const About = () => {
           onClick={() => gotoResume()}
           className="text-purple-500 bg-gray-200 px-8 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-2xl active:scale-90 transform transition-all duration-150"
         >
-          <span className="animate-pulse">About me</span>
+          <span id="about-button">About me</span>
         </button>
       </div>
     </div>

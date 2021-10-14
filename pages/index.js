@@ -6,11 +6,16 @@ import Projects from "../components/Projects";
 import Experiences from "../components/Experiences";
 import Skills from "../components/Skills";
 import siteLogo from "../images/siteLogos/qLogo.png";
+import { DefaultSeo, NextSeo } from "next-seo";
 
 export default function Home({ skillsData }) {
-  
   return (
     <>
+      <NextSeo
+        title="Quentin Ng"
+        description="Quentin is a software engineer working with JavaScript React, C#, and Python. Looking for new opportunities!"
+        canonical="https://www.quentin-ng.com/"
+      />
       <Head>
         <link
           rel="icon"
@@ -39,17 +44,17 @@ export default function Home({ skillsData }) {
         <Header />
         <About />
         <main className="max-w-7xl mx-auto px-8 sm:px-16">
-          <a id="projects" ></a>
+          <a id="projects"></a>
           <section className="pt-6">
             <h1 className="font-bold text-xl">Projects</h1>
             <Projects />
           </section>
-          <a id="skills" ></a>
+          <a id="skills"></a>
           <section className="pt-6 " id="">
             <h1 className="font-bold text-xl">Skills</h1>
             <Skills skillsData={skillsData} />
           </section>
-          <a id="experiences" ></a>
+          <a id="experiences"></a>
           <section className="pt-6" id="">
             <h1 className="font-bold text-xl">Experiences</h1>
             <Experiences />

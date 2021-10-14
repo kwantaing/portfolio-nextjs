@@ -1,7 +1,8 @@
 import MediumCard from "./MediumCard";
-import mccThumb from "../images/thumbnails/mccThumbnail.png";
-import bistroThumb from "../images/thumbnails/bistrostudioThumbnail.png";
-import netflixThumb from "../images/thumbnails/netflix_payments.png";
+import mccThumb from "../images/thumbnails/mccThumb.png";
+import bistroThumb from "../images/thumbnails/bistroThumb.png";
+import netflixThumb from "../images/thumbnails/netflix_homepage.png";
+import airbnbThumb from "../images/thumbnails/airbnbThumb.png";
 
 const Projects = () => {
   const projects = {
@@ -42,18 +43,16 @@ const Projects = () => {
       features: [],
       link: "https://bistro.studio",
     },
-
-    "Android Destinations Tracker": {
-      name: "Android Destinations Tracker",
+    "Airbnb clone": {
+      name: "Airbnb clone",
       description: [
-        "Android application that keeps track of user travel destinations, sorted by dream, planned and explored destinations",
-        "Displays and pins destinations on Google maps by color coded markers",
+        "Airbnb clone web application that implements Mapbox, search features, etc.",
       ],
+      technologies: ["React", "NodeJS", "Tailwind CSS", "Mapbox"],
       images: [],
-      thumbnail: "",
+      thumbnail: airbnbThumb,
       features: [],
-      technologies: ["Java", "Google Maps API", "Sqlite", "Android Studio"],
-      link: "https://github.com/kwantaing/Android_Destinations_Tracker",
+      link: "https://airbnb-clone-psi-ochre.vercel.app/",
     },
     "Netflix clone": {
       name: "Netflix clone",
@@ -74,6 +73,18 @@ const Projects = () => {
       ],
       link: "https://netflix-clone-33d69.web.app",
     },
+    "Android Destinations Tracker": {
+      name: "Android Destinations Tracker",
+      description: [
+        "Android application that keeps track of user travel destinations, sorted by dream, planned and explored destinations",
+        "Displays and pins destinations on Google maps by color coded markers",
+      ],
+      images: [],
+      thumbnail: "",
+      features: [],
+      technologies: ["Java", "Google Maps API", "Sqlite", "Android Studio"],
+      link: "https://github.com/kwantaing/Android_Destinations_Tracker",
+    },
   };
   return (
     <div>
@@ -88,11 +99,6 @@ const Projects = () => {
             />
           );
         })}
-
-        {/* {data.map((project) => {
-          console.log(project);
-          return <MediumCard img={project.img} title={project.title} />;
-        })} */}
       </div>
     </div>
   );
