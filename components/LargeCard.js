@@ -12,7 +12,7 @@ const LargeCard = ({ experience }) => {
             ease-out first:border-t rounded-2xl md:grid md:grid-cols-6"
       >
         {/* Left */}
-        <div className="relative md:ml-7 h-24 w-40 md:h-52 xl:ml-16 lg:w-60 flex-shrink-1 md:col-span-2 transform transition-all duration-100 ease-in">
+        <div className="relative ml-5 md:ml-7 h-24 w-40 md:h-52 xl:ml-16 lg:w-60 flex-shrink-1 md:col-span-2 transform transition-all duration-100 ease-in">
           <Image
             className="relative h-1/2 mx-5 object-left sm:object-center "
             src={img}
