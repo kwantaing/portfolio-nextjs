@@ -3,6 +3,7 @@ import mccThumb from "../images/thumbnails/mccThumb.png";
 import bistroThumb from "../images/thumbnails/bistroThumb.png";
 import netflixThumb from "../images/thumbnails/netflix_homepage.png";
 import airbnbThumb from "../images/thumbnails/airbnbThumb.png";
+import portfolioThumb from "../images/thumbnails/portfolioThumb.png";
 
 const Projects = () => {
   const projects = {
@@ -69,9 +70,20 @@ const Projects = () => {
         "Google Firebase",
         "TMDB API",
         "Stripe API",
-        "Firebase Authentication",
+        "Firebase Auth",
       ],
       link: "https://netflix-clone-33d69.web.app",
+    },
+    Portfolio: {
+      name: "Portfolio",
+      description: [
+        "Personal portfolio page, showcasing skills, experience, and projects.",
+      ],
+      images: [],
+      thumbnail: portfolioThumb,
+      features: [],
+      technologies: ["React", "NodeJS", "NextJS", "Tailwind CSS", "AWS S3"],
+      link: "#",
     },
     // "Android Destinations Tracker": {
     //   name: "Android Destinations Tracker",
@@ -96,6 +108,7 @@ const Projects = () => {
               img={projects[key].thumbnail}
               title={projects[key].name}
               link={projects[key].link}
+              tech={projects[key].technologies}
             />
           );
         })}

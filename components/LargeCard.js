@@ -6,9 +6,9 @@ const LargeCard = ({ experience }) => {
   let endDateFormatted = new Date(endDate);
   return (
       <div
-        className="sm:flex z-20 py-7 px-2 border-b dark:bg-gray-900 border-none my-3 
+        className="shadow-sm sm:flex z-20 py-7 px-2 border-b dark:bg-gray-900 border-none my-3 
             cursor-pointer dark:opacity-100 dark:hover:opacity-80 opacity-90 hover:opacity-100 dark:hover:bg-gray-900
-          hover:bg-gray-50 dark:hover:shadow-lg hover:shadow-2xl pr-4 transition duration-200 
+          hover:bg-gray-50 dark:hover:shadow-lg hover:shadow-2xl pr-4 transition duration-500 
             ease-out first:border-t rounded-2xl md:grid md:grid-cols-6"
       >
         {/* Left */}
