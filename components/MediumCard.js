@@ -20,8 +20,8 @@ const MediumCard = ({ img, title, link, tech }) => {
           objectFit="cover"
           className="bg-gray-500 rounded-xl"
         />
-        <div className="opacity-0 hover:opacity-95 hover:absolute top-0 left-0 h-full w-full rounded-xl z-50 hover:bg-gradient-to-t hover:from-black transform transition-all duration-300 ease-in-out ">
-          <div className="absolute left-1/3 top-1/4 z-51 text-white">
+        <div className="opacity-0 hover:opacity-70 hover:absolute top-0 left-0 h-full w-full rounded-xl z-50 hover:bg-black transform transition-all duration-300 ease-in-out ">
+          <div className="absolute left-1/3 top-1/4 z-51 opacity:100 text-white font-bold">
             {tech.map((item) => (
               <p>{item}</p>
             ))}

@@ -34,7 +34,10 @@ const Header = () => {
       } p-7 w-full z-50 grid grid-cols-4 ease-in transition-all duration-150`}
     >
       {/* <header className={`sticky top-0 z-50 ${show && 'bg-white'} shadow-xl p-5 grid grid-cols-4 ease-in transition-all duration-75`}> */}
-      <div className="relative col-span-4 sm:col-auto  items-center h-16 cursor-pointer my-auto ">
+      <div
+        className="relative col-span-4 sm:col-auto  items-center h-16 cursor-pointer my-auto hover-underline-animation "
+        onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+      >
         <Image
           // src="https://links.papareact.com/qd3"
           src={Logo}
@@ -45,13 +48,22 @@ const Header = () => {
       </div>
       <span />
       <div className="hidden sm:inline-flex text-md font-semibold transform transition duration-500 ease-in-out col-span-2  flex space-x-3 justify-end items-center">
-        <a className="hover-underline-animation cursor-pointer" onClick={() => scrollToEle("about")}>
+        <a
+          className="hover-underline-animation cursor-pointer"
+          onClick={() => scrollToEle("about")}
+        >
           About
         </a>
-        <a className="hover-underline-animation  cursor-pointer" onClick={() => scrollToEle("projects")}>
+        <a
+          className="hover-underline-animation  cursor-pointer"
+          onClick={() => scrollToEle("projects")}
+        >
           Projects
         </a>
-        <a className="hover-underline-animation  cursor-pointer" onClick={() => scrollToEle("skills")}>
+        <a
+          className="hover-underline-animation  cursor-pointer"
+          onClick={() => scrollToEle("skills")}
+        >
           Tech
         </a>
         <a
