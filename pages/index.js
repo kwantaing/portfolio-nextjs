@@ -5,8 +5,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Experiences from "../components/Experiences";
 import Skills from "../components/Skills";
-import siteLogo from "../images/siteLogos/qLogo.png";
-import { DefaultSeo, NextSeo } from "next-seo";
+import { NextSeo } from "next-seo";
 
 export default function Home({ skillsData }) {
   return (

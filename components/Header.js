@@ -33,13 +33,11 @@ const Header = () => {
           : "text-gray-200"
       } p-7 w-full z-50 grid grid-cols-4 ease-in transition-all duration-150`}
     >
-      {/* <header className={`sticky top-0 z-50 ${show && 'bg-white'} shadow-xl p-5 grid grid-cols-4 ease-in transition-all duration-75`}> */}
       <div
         className="relative col-span-4 sm:col-auto  items-center h-16 cursor-pointer my-auto"
         onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
       >
         <Image
-          // src="https://links.papareact.com/qd3"
           src={Logo}
           layout="fill"
           objectFit="contain"

@@ -22,7 +22,6 @@ const Footer = () => {
         </div>
         <div className="flex h-full justify-center align-middle">
           <SocialIcon
-            // bgColor="lightgray"
             bgColor="#8829D0"
             className="hover:scale-110 hover:opacity-95 opacity-80  transform transition-all duration-125"
             url="mailto:quentin.ng.dev@gmail.com"

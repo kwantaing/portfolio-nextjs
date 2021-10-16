@@ -85,18 +85,6 @@ const Projects = () => {
       technologies: ["React", "NodeJS", "NextJS", "Tailwind CSS", "AWS S3"],
       link: "#",
     },
-    // "Android Destinations Tracker": {
-    //   name: "Android Destinations Tracker",
-    //   description: [
-    //     "Android application that keeps track of user travel destinations, sorted by dream, planned and explored destinations",
-    //     "Displays and pins destinations on Google maps by color coded markers",
-    //   ],
-    //   images: [],
-    //   thumbnail: "",
-    //   features: [],
-    //   technologies: ["Java", "Google Maps API", "Sqlite", "Android Studio"],
-    //   link: "https://github.com/kwantaing/Android_Destinations_Tracker",
-    // },
   };
   return (
     <div>
