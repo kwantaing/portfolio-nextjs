@@ -60,7 +60,7 @@ const Header = () => {
         </a>
         <a
           className="hover-underline-animation  cursor-pointer"
-          onClick={() => scrollToEle("skills")}
+          onClick={() => scrollToEle("tech")}
         >
           Tech
         </a>

@@ -48,9 +48,9 @@ export default function Home({ skillsData }) {
             <h1 className="font-bold text-xl">Projects</h1>
             <Projects />
           </section>
-          <a id="skills"></a>
+          <a id="tech"></a>
           <section className="pt-6 " id="">
-            <h1 className="font-bold text-xl">Skills</h1>
+            <h1 className="font-bold text-xl">Tech</h1>
             <Skills skillsData={skillsData} />
           </section>
           <a id="experiences"></a>

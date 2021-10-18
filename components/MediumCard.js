@@ -1,5 +1,4 @@
 import Image from "next/image";
-import aStudio from "../images/androidStudio.png";
 
 const MediumCard = ({ img, title, link, tech }) => {
   const goToProjectLink = (link) => {
@@ -15,7 +14,7 @@ const MediumCard = ({ img, title, link, tech }) => {
       >
         <Image
           alt={title}
-          src={img ? img : aStudio}
+          src={img ? img : ""}
           layout="fill"
           objectFit="cover"
           className="bg-gray-500 rounded-xl"
@@ -23,7 +22,7 @@ const MediumCard = ({ img, title, link, tech }) => {
         <div className="opacity-0 hover:opacity-70 hover:absolute top-0 left-0 h-full w-full rounded-xl z-50 hover:bg-black transform transition-all duration-300 ease-in-out ">
           <div className="absolute left-1/3 top-1/4 z-51 opacity:100 text-white font-bold">
             {tech.map((item) => (
-              <p>{item}</p>
+              <p key={`${item.name}-${item.link}`}>{item}</p>
             ))}
           </div>
         </div>

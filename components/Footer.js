@@ -1,6 +1,3 @@
-import Logo from "../images/siteLogos/qdevLogo.png";
-import Image from "next/image";
-import github from "../images/github.png";
 import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {

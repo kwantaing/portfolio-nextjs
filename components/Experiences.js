@@ -1,5 +1,5 @@
 import LargeCard from "./LargeCard";
-import bistroLogo from "../images/bistroLogo.png";
+import bistroLogo from "../images/thumbnails/bistroLogo.png";
 import citiImg from "../images/thumbnails/citi.png";
 import cppImg from "../images/thumbnails/cpp.png";
 import codingDojoImg from "../images/thumbnails/coding_dojo.png";
