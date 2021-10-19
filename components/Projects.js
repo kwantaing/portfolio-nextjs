@@ -66,6 +66,7 @@ const Projects = () => {
       thumbnail: netflixThumb,
       technologies: [
         "React",
+        "Redux",
         "NodeJS",
         "Google Firebase",
         "TMDB API",
