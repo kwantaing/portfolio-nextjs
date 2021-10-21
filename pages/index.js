@@ -11,8 +11,8 @@ export default function Home({ skillsData }) {
   return (
     <>
       <NextSeo
-        title="Quentin Ng"
-        description="Quentin is a software engineer working with JavaScript React, C#, and Python. Looking for new opportunities!"
+        title="Quentin Ng - Software Engineer in React, Python, C#"
+        description="Quentin Ng is a software engineer working on React, Python, and C#. He enjoys being creative with code, solving problems with algorithms, and keeping up to date with the newest technology."
         canonical="https://www.quentin-ng.com/"
       />
       <Head>

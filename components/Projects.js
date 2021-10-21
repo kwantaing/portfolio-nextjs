@@ -49,7 +49,7 @@ const Projects = () => {
       description: [
         "Airbnb clone web application that implements Mapbox, search features, etc.",
       ],
-      technologies: ["React", "NodeJS", "Tailwind CSS", "Mapbox"],
+      technologies: ["React", "NodeJS","NextJS", "Tailwind CSS", "Mapbox"],
       images: [],
       thumbnail: airbnbThumb,
       features: [],
