@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const About = () => {
+  const [ready, setReady] = useState(false);
   const text1 = "Hi, I'm Quentin.";
   const text2 = "I'm a Software Engineer.";
   const speed = 65;
@@ -20,8 +21,9 @@ const About = () => {
       if (j < text2.length) {
         document.getElementById("text2").innerHTML += text2.charAt(j);
         j++;
-        setTimeout(typeWriter, speed);
+        setTimeout(typeWriter, 50);
       } else {
+        setReady(true);
         document.getElementById("about-button").classList.add("animate-pulse");
       }
     }
@@ -32,9 +34,9 @@ const About = () => {
   return (
     <div
       id="about"
-      className={`bg-gradient-to-br from-purple-200 via-purple-400 to-blue-400 relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]`}
+      className={` flex justify-center bg-gradient-to-br from-purple-200 via-purple-400 to-blue-400 relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]`}
     >
-      <div className="absolute top-1/2 w-full text-center">
+      <div className="absolute w-1/2 top-1/2 text-center">
         <p
           id="text1"
           className="text-sm sm:text-lg font-semibold text-gray-200"
