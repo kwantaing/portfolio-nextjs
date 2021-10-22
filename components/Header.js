@@ -42,6 +42,7 @@ const Header = () => {
           layout="fill"
           objectFit="contain"
           className="object-center sm:object-left transform transition-all duration-150"
+          alt="Quentin"
         />
       </div>
       <span />

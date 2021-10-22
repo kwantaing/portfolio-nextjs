@@ -18,6 +18,7 @@ const LargeCard = ({ experience }) => {
             src={img}
             layout="fill"
             objectFit="contain"
+            alt={title}
           />
         </div>
         {/* Right */}
