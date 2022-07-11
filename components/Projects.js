@@ -17,7 +17,6 @@ const Projects = () => {
       technologies: [
         "React",
         "GatsbyJS",
-        "NodeJS",
         "GraphQL",
         "WordPress",
         "Netlify",
@@ -35,7 +34,6 @@ const Projects = () => {
       technologies: [
         "React",
         "GatsbyJS",
-        "NodeJS",
         "GraphQL",
         "Contentful",
         "Netlify",
@@ -50,7 +48,7 @@ const Projects = () => {
       description: [
         "Airbnb clone web application that implements Mapbox, search features, etc.",
       ],
-      technologies: ["React", "NodeJS", "NextJS", "Tailwind CSS", "Mapbox"],
+      technologies: ["React", "NextJS", "Tailwind CSS", "Mapbox"],
       images: [],
       thumbnail: airbnbThumb,
       features: [],
@@ -68,7 +66,6 @@ const Projects = () => {
       technologies: [
         "React",
         "Redux",
-        "NodeJS",
         "Google Firebase",
         "TMDB API",
         "Stripe API",
@@ -102,7 +99,7 @@ const Projects = () => {
       images: [],
       thumbnail: portfolioThumb,
       features: [],
-      technologies: ["React", "NodeJS", "NextJS", "Tailwind CSS", "AWS S3"],
+      technologies: ["React", "NextJS", "Tailwind CSS", "AWS S3"],
       link: "#",
     },
   };
