@@ -76,24 +76,24 @@ const Projects = () => {
       ],
       link: "https://netflix-clone-33d69.web.app",
     },
-    "Reddit clone": {
-      name: "Reddit clone",
-      descrpition: [
-        "Reddit clone full stack application that leverages NextAuth and Supabase to serve community posts and forums.",
-        "Users can create, upvote, and comment on posts. They can also create a new subreddit community for other users to follow.",
-      ],
-      images: [],
-      thumbnail: redditThumb,
-      technologies: [
-        "React",
-        "NextJS",
-        "Supabase",
-        "PostGreSQL",
-        "NextAuth",
-        "Tailwind CSS",
-      ],
-      link: "https://reddit-app-1.vercel.app"
-    },
+    // "Reddit clone": {
+    //   name: "Reddit clone",
+    //   descrpition: [
+    //     "Reddit clone full stack application that leverages NextAuth and Supabase to serve community posts and forums.",
+    //     "Users can create, upvote, and comment on posts. They can also create a new subreddit community for other users to follow.",
+    //   ],
+    //   images: [],
+    //   thumbnail: redditThumb,
+    //   technologies: [
+    //     "React",
+    //     "NextJS",
+    //     "Supabase",
+    //     "PostGreSQL",
+    //     "NextAuth",
+    //     "Tailwind CSS",
+    //   ],
+    //   link: "https://reddit-app-1.vercel.app"
+    // },
     Portfolio: {
       name: "Portfolio",
       description: [
