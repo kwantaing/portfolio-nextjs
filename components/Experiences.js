@@ -3,9 +3,22 @@ import bistroLogo from "../images/thumbnails/bistroLogo.png";
 import citiImg from "../images/thumbnails/citi.png";
 import cppImg from "../images/thumbnails/cpp.png";
 import codingDojoImg from "../images/thumbnails/coding_dojo.png";
+import ksbImg from '../images/thumbnails/ksb_logo.png';
 
 const Experiences = () => {
   const work = [
+    // {
+    //   title: "KSB Consulting Inc.",
+    //   role: "Software Engineer",
+    //   img: ksbImg,
+    //   startDate: "10/25/2022",
+    //   endDate: "Present",
+    //   description: [
+    //     "Designed, implemented, and deployed a new full-stack marketing website using Next.js, .NET, SQL Server, AWS, and Azure",
+    //     "Assisted in the creation of documentation and training videos for Warehouse Management Software, leading to a decrease in support requests by 30%",
+    //   ],
+    //   location: "San Dimas, CA",
+    // },
     {
       title: "Bistro Studios",
       role: "Web Developer and Technical Trainer",
