@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.6",
     "next": "latest",
     "next-seo": "^4.28.1",
     "next-videos": "^1.4.0",
