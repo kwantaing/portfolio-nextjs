@@ -8,7 +8,8 @@ const About = () => {
   const speed = 65;
   let i = 0;
   let j = 0;
-  const resumeUrl = "https://quentin-ng.com/quentin-ng-resume.pdf";
+  // const resumeUrl = "https://quentin-ng.com/quentin-ng-resume.pdf";
+  const resumeUrl = "https://quentin-ng.com/quentin-ng-swe-resume-2023.pdf";
   const gotoResume = () => {
     window.open(resumeUrl, "_blank");
   };
