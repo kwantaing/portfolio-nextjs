@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import Experiences from "../components/Experiences";
 import Skills from "../components/Skills";
 import { NextSeo } from "next-seo";
+import Script from 'next/script'
 
 export default function Home({ skillsData }) {
   return (
@@ -39,6 +40,16 @@ export default function Home({ skillsData }) {
         <title>Quentin Ng</title>
         <link rel="icon" href="../images/siteLogos/qLogo.png" />
       </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-EM0HLH7WTP"></Script>
+      <Script>
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EM0HLH7WTP');
+        `}
+      </Script>
       <div className="dark:bg-gray-800 bg-white dark:text-gray-200 text-gray-700">
         <Header />
         <About />
